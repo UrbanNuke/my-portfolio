@@ -110,7 +110,7 @@ a:hover {
 /*--------------Header ----------------------*/
 
 header {
-	background-color: #f7f7b7;
+	background-color: #f7f7F7;
 	padding-bottom: 230px;
 	overflow: hidden;
 }
@@ -147,7 +147,8 @@ header {
 .menu-item__link {
 	display: inline-block;
 	font-size: 16px;
-	color: #1f1f24;
+	/*color: #1f1f24;*/
+	color: #fff;
 	margin-right: 30px;
 }
 
