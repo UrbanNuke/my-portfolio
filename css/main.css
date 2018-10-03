@@ -147,8 +147,7 @@ header {
 .menu-item__link {
 	display: inline-block;
 	font-size: 16px;
-	/*color: #1f1f24;*/
-	color: #fff;
+	color: #1f1f24;
 	margin-right: 30px;
 }
 
