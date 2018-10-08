@@ -13,11 +13,37 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="https://use.fontawesome.com/601526eabf.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/main.js"></script>
 
 </head>
 <body>
 	<header>
+		<div class="popup-callback">
+			<div class="popup-callback-form">
+				<form method="get">
+					<p class="popup-calback-form__text text-center">
+						Укажите свой телефон и&nbsp;я&nbsp;свяжусь с&nbsp;Вами в&nbsp;удобное время.
+					</p>
+					<input type="text" maxlength="30" class="popup-callback-form__field popup-callback-form__field_name" placeholder="Имя">
+					<input type="tel" id="tel" maxlength="11" class="popup-callback-form__field popup-callback-form__field_tel" placeholder="Телефон">
+					<button class="button popup-button" type="submit">Заказать звонок</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup-callback_other">
+			<div class="popup-callback-form popup-callback-form_other">
+				<form method="get">
+					<p class="popup-calback-form__text text-center">
+						Напишите интересующий Вас вопрос и&nbsp;вы&nbsp;тут&nbsp;же получите ответ на&nbsp;почту!
+					</p>
+					<input type="text" maxlength="30" class="popup-callback-form__field popup-callback-form__field_name" placeholder="Имя">
+					<input type="email" maxlength="40" class="popup-callback-form__field popup-callback-form__field_email" placeholder="Email">
+					<textarea class="popup-callback-form__msg"></textarea>
+					<button class="button popup-button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
 		<div class="container">
 			<div class="flying-el">
 				<div class="flying-el__brackets">{ }</div>
@@ -27,7 +53,7 @@
 				<div class="flying-el__div flying-el__div_size_m">&lt;div&gt;</div>
 			</div>
 			<div class="row navigation-bar">
-				<div class="col-lg-5 col-md-5 col-2">
+				<div class="col-lg-5 col-md-3 col-2">
 					<div class="popup-menu d-block d-lg-none">
 						<i class="fa fa-bars"></i>
 					</div>
@@ -45,12 +71,12 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-lg-7 col-md-7 col-8">
+				<div class="col-lg-7 col-md-9 col-8">
 					<div class="call-back d-flex justify-content-md-end justify-content-center">
 						<p class="call-back__number">
 							+7 (962) 725-10-06
 						</p>
-						<div class="call-back__button">
+						<div class="call-back__button d-none d-md-block">
 							Заказать звонок
 						</div>
 					</div>
@@ -59,6 +85,21 @@
 					<div class="call-back__icon">
 						<i class="fa fa-phone"></i>
 					</div>
+				</div>
+				<div class="col-12 text-center popup-nav">
+					<nav>
+						<ul class="menu">
+							<li class="menu-item">
+								<a href="#service" class="menu-item__link">Услуги</a>
+							</li>
+							<li class="menu-item">
+								<a href="#examples" class="menu-item__link">Портфолио</a>
+							</li>
+							<li class="menu-item">
+								<a href="#price" class="menu-item__link">Стоимость</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 			<div class="row first-screen d-none d-md-block">
@@ -254,7 +295,7 @@
 				<div class="col-lg-12 col-md-12">
 					<div class="price-block">
 						<h3 class="price-block__title">
-							Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+							Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;2&nbsp;часа.*
 						</h3>
 						<p class="price-block__text">
 							Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально, <br>
